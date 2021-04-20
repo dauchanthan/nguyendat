@@ -1,0 +1,46 @@
+.table-hover {
+}
+.bg-hover:hover {
+  background-color: burlywood;
+  color: #fff;
+  cursor: pointer;
+}
+.bg-hover:focus {
+  outline: none;
+}
+.bg-color {
+  background-color: #376906;
+  color: #fff;
+}
+td,
+th {
+  border: 1px solid#ddd;
+}
+button.addBtn {
+  padding: 8px 15px;
+  font-size: 16px;
+  text-transform: capitalize;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
+button.addBtn:hover {
+  background-color: burlywood;
+  color: #fff;
+}
+.inputSearch {
+  padding: 5px;
+  width: 300px;
+  height: 40px;
+  font-size: 17px;
+}
+.btnSearch {
+  width: 50px;
+  height: 40px;
+}
+.inputSearch:focus {
+  outline: none;
+}
+.searchStudent {
+  margin: 8px 0;
+}

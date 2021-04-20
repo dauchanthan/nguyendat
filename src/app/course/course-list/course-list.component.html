@@ -1,0 +1,10 @@
+<div class="container">
+  <h4 [ngStyle]="{ 'text-align': 'center' }">cac khoa hoc lap trinh</h4>
+  <div class="row">
+    <div class="col-lg-3" *ngFor="let course of listCourse">
+      <div class="course-main">
+        <a href="" [routerLink]="['/course',course.id]"> {{ course.name }}</a>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,107 @@
+{
+  "students": [
+    {
+      "name": "dat",
+      "age": "22",
+      "email": "fd@gmail.com",
+      "address": "ha noi",
+      "phone": "12312313221",
+      "gender": "bg",
+      "id": 2
+    },
+    {
+      "name": "duc",
+      "age": "26",
+      "email": "duc@gmail.com",
+      "address": "hung yen",
+      "phone": "0912345555",
+      "gender": "nam",
+      "id": 3
+    },
+    {
+      "name": "Van Anh",
+      "age": "24",
+      "email": "va@gmail.com",
+      "address": "nam dinh",
+      "phone": "0912345456",
+      "gender": "nu",
+      "id": 4
+    },
+    {
+      "name": "tuan",
+      "age": "24",
+      "email": "tuan@gmail.com",
+      "address": "hai duong",
+      "phone": "0912090878",
+      "gender": "nam",
+      "id": 6
+    },
+    {
+      "name": "hieu",
+      "age": "26",
+      "email": "hieu@gmail.com",
+      "address": "ha noi",
+      "phone": "0912234343",
+      "gender": "nam",
+      "id": 7
+    },
+    {
+      "name": "linh",
+      "age": "26",
+      "email": "linh@gmail.com",
+      "address": "hai phong",
+      "phone": "0912898988",
+      "gender": "nu",
+      "id": 8
+    },
+    {
+      "name": "hai",
+      "age": "12",
+      "email": "sdfsd@gmail.com",
+      "address": "dsfdsf",
+      "phone": "0912333456",
+      "gender": "dsfdsfdsf",
+      "id": 9
+    },
+    {
+      "name": "wetrewtew",
+      "age": "vc123",
+      "email": "safd@gmail.com",
+      "address": "fdsvdcv",
+      "phone": "safsd",
+      "gender": "acx",
+      "id": 13
+    },
+    {
+      "name": "vu",
+      "age": "24",
+      "email": "vu@gmail.com",
+      "address": "ha noi",
+      "phone": "0912345678",
+      "gender": "nam",
+      "id": 14
+    }
+  ],
+  "course": [
+    {
+      "id": 1,
+      "name": "nodejs",
+      "image": "https://vncoder.vn/upload/img/post/1591935235.jpg"
+    },
+    {
+      "id": 2,
+      "name": "java",
+      "image": "https://codelearn.io/Upload/Blog/nhung-loi-thuong-gap-khi-lap-trinh-java-63725972059.7478.jpg"
+    },
+    {
+      "id": 3,
+      "name": "python",
+      "image": "https://tuhocict.com/wp-content/uploads/2020/06/Python-programming-language-feature-image-1024x576.jpg"
+    },
+    {
+      "id": 4,
+      "name": "reactJS",
+      "image": "http://free-php-editor.com/wp-content/uploads/2019/09/Reacjs-750x418.png"
+    }
+  ]
+}

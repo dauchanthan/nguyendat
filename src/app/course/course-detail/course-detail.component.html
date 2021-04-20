@@ -1,0 +1,20 @@
+<div class="container">
+  <div class="course-detail">
+    <div class="row">
+      <div class="col-4">
+        <div class="course-detail__image">
+          <img [src]="course?.image" alt="" />
+        </div>
+      </div>
+      <div class="col-8">
+        <div class="course-detail__info">
+          <h4>{{ course?.name }}</h4>
+          <div class="convert-course">
+            <button (click)="goPrev()" id="btnPrev">trang truoc</button>
+            <button (click)="goNext()">trang sau</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

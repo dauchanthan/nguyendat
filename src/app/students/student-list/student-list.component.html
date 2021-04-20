@@ -1,0 +1,82 @@
+<div class="container">
+  <h4 class="title-form" [ngStyle]="{'text-align':'center'}">Danh sach sinh vien dang ki</h4>
+  <span
+    [ngStyle]="{ color: '#131111', 'font-weight': '600', 'font-size': '16px' }"
+    >tong so sv dang ki:{{ totalStudent }} sv</span
+  >
+  <div class="searchStudent">
+    <form action="/action_page.php">
+      <input
+        type="text"
+        placeholder="Enter name to search .."
+        class="inputSearch"
+        name="name"
+        [(ngModel)]="name"
+        (input)="btnSearch()"
+      />
+      <!-- <button type="button" class="btnSearch" (click)="btnSearch()">
+        <i class="fa fa-search"></i>
+      </button> -->
+    </form>
+  </div>
+  <div class="row">
+    <div class="col-12 col-lg-12">
+      <table class="table table-hover" style="border-collapse: collapse">
+        <thead>
+          <tr class="bg-color">
+            <th>id</th>
+            <th>name</th>
+            <th>age</th>
+            <th>gender</th>
+            <th>gmail</th>
+            <th>phone</th>
+            <th>address</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr
+            *ngFor="let student of listStudents"
+            class="bg-hover"
+            [routerLink]="['/students', student.id]"
+          >
+            <td>{{ student.id }}</td>
+            <td>{{ student.name }}</td>
+            <td>{{ student.age }}</td>
+            <td>{{ student.gender }}</td>
+            <td>{{ student.email }}</td>
+            <td>{{ student.phone }}</td>
+            <td>{{ student.address }}</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <nav aria-label="Page navigation example">
+        <ul class="pagination">
+          <li class="page-item">
+            <a class="page-link" href="#" aria-label="Previous">
+              <span aria-hidden="true">&laquo;</span>
+              <span class="sr-only">Previous</span>
+            </a>
+          </li>
+          <li class="page-item" *ngFor="let page of pages">
+            <a
+              class="page-link"
+              routerLink="/students"
+              [queryParams]="{ pageNumber: page }"
+              >{{ page }}</a
+            >
+          </li>
+          <li class="page-item">
+            <a class="page-link" href="#" aria-label="Next">
+              <span aria-hidden="true">&raquo;</span>
+              <span class="sr-only">Next</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <div class="addStudent">
+    <button (click)="addStudent()" class="addBtn">Them sinh vien</button>
+  </div>
+</div>

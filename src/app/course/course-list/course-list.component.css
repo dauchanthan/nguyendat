@@ -1,0 +1,35 @@
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+.col-lg-3 {
+  position: relative;
+  flex: 0 0 25%;
+  max-width: 25%;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.course-main {
+  padding: 20px 40px;
+  border: 1px solid tan;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.course-main > a {
+  color: rgb(197, 82, 5);
+  text-transform: capitalize;
+  font-size: 18px;
+}
+.course-main:hover {
+  border: 3px solid blue;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  cursor: pointer;
+}
+a {
+  text-decoration: none;
+  display: block;
+}

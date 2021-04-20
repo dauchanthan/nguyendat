@@ -1,0 +1,23 @@
+.dflex {
+  display: flex;
+}
+.align-items-center {
+  align-items: center;
+}
+.btn-Edit {
+  margin-right: 10px;
+}
+.btn > button {
+  width: 130px;
+  height: 30px;
+  text-transform: capitalize;
+}
+.btn > button:hover {
+  color: #fff;
+  background-color: blue;
+  outline: none;
+  border: none;
+}
+.btn > button:focus {
+  outline: none;
+}

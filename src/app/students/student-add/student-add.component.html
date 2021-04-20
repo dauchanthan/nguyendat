@@ -1,0 +1,110 @@
+<div class="container">
+  <h3 class="title-form">them sinh vien</h3>
+
+  <form class="form-style" [formGroup]="rfStudent" (ngSubmit)="onSubmit()">
+    <ul>
+      <li>
+        <input
+          type="text"
+          class="input-style align-left"
+          placeholder="Name"
+          formControlName="name"
+        />
+        <input
+          type="email"
+          class="input-style align-right"
+          placeholder="age"
+          formControlName="age"
+        />
+      </li>
+      <span
+        *ngIf="
+          rfStudent.controls.name?.hasError('required') &&
+          rfStudent.controls.name?.touched
+        "
+      >
+        name is required!
+      </span>
+      <span
+        class="align-right"
+        *ngIf="
+          rfStudent.controls.age?.hasError('required') &&
+          rfStudent.controls.age?.touched
+        "
+      >
+        age is required!
+      </span>
+      <li>
+        <input
+          type="text"
+          class="input-style align-left"
+          placeholder="Phone"
+          formControlName="phone"
+        />
+        <input
+          type="url"
+          class="input-style align-right"
+          placeholder="email"
+          formControlName="email"
+        />
+      </li>
+
+      <span
+        *ngIf="
+          rfStudent.controls.phone?.hasError('required') &&
+          rfStudent.controls.phone?.touched
+        "
+      >
+        phone is required!
+      </span>
+
+      <span
+        class="align-right"
+        *ngIf="
+          rfStudent.controls.email?.hasError('required') &&
+          rfStudent.controls.email?.touched
+        "
+      >
+        email is required!
+      </span>
+
+      <li>
+        <input
+          type="text"
+          class="input-style align-left"
+          placeholder="address"
+          formControlName="address"
+        />
+        <input
+          type="url"
+          class="input-style align-right"
+          placeholder="gender"
+          formControlName="gender"
+        />
+      </li>
+      <span
+        *ngIf="
+          rfStudent.controls.address?.hasError('required') &&
+          rfStudent.controls.address?.touched
+        "
+      >
+        address is required!
+      </span>
+
+      <span
+        class="align-right"
+        *ngIf="
+          rfStudent.controls.gender?.hasError('required') &&
+          rfStudent.controls.gender?.touched
+        "
+      >
+        gender is required!
+      </span>
+      <li>
+        <button type="submit" class="btn-add" [disabled]="!rfStudent.valid">
+          Them
+        </button>
+      </li>
+    </ul>
+  </form>
+</div>

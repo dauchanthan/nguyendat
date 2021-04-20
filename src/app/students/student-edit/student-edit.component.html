@@ -1,0 +1,71 @@
+<div class="container">
+  <div class="main">
+    <form
+      id="contact"
+      action=""
+      [formGroup]="rfStudent"
+      (ngSubmit)="onSubmit()"
+    >
+      <h3>Edit Student</h3>
+      <fieldset>
+        <input
+          placeholder=" name..."
+          type="text"
+          class="inputText"
+          required
+          formControlName="name"
+        />
+      </fieldset>
+      <fieldset>
+        <input
+          placeholder=" age..."
+          type="text"
+          class="inputText"
+          required
+          formControlName="age"
+        />
+      </fieldset>
+      <fieldset>
+        <input
+          placeholder=" gender..."
+          type="text"
+          class="inputText"
+          required
+          formControlName="gender"
+        />
+      </fieldset>
+
+      <fieldset>
+        <input
+          placeholder="Email..."
+          type="email"
+          class="inputText"
+          required
+          formControlName="email"
+        />
+      </fieldset>
+      <fieldset>
+        <input
+          placeholder=" Phone..."
+          type="tel"
+          class="inputText"
+          required
+          formControlName="phone"
+        />
+      </fieldset>
+      <fieldset>
+        <input
+          placeholder="address..."
+          type="url"
+          class="inputText"
+          required
+          formControlName="address"
+        />
+      </fieldset>
+
+      <fieldset>
+        <button name="submit" type="submit" (click)="onUpdate()">Submit</button>
+      </fieldset>
+    </form>
+  </div>
+</div>

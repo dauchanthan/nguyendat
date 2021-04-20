@@ -1,0 +1,15 @@
+<div class="container">
+  <div class="main" [ngStyle]="{ 'font-size': '18px' }">
+    <p>name:{{ student?.name }}</p>
+    <p>tuoi:{{ student?.age }}</p>
+    <p>dia chi:{{ student?.address }}</p>
+    <p>so dien thoai:{{ student?.phone }}</p>
+    <p>gioi tinh:{{ student?.gender }}</p>
+    <p>email:{{ student?.email }}</p>
+    <div class="btn dflex align-items-center">
+      <button class="btnDelete" (click)="onEdit(student.id)">Edit</button>
+
+      <button class="btnDelete" (click)="onDelete(student.id)">Delete</button>
+    </div>
+  </div>
+</div>
