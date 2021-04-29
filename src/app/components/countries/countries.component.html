@@ -1,0 +1,31 @@
+<div class="container">
+  <label>Country:</label>
+  <select (change)="getCountry($event.target.value)">
+    <option *ngFor="let country of countries" value="{{ country.Slug }}">
+      {{ country.Country }}
+    </option>
+  </select>
+  <button (click)="getCoronaData()">Det Corona Data</button>
+  <div class="cases">
+    <div class="row">
+      <div class="col-4">
+        <div class="cases-item">
+          <h3 class="cases-item__title">total confirmed cases</h3>
+          <p>{{ Confirmed | number }}</p>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="cases-item">
+          <h3 class="cases-item__title">total recovered cases</h3>
+          <p>{{ Recovered | number }}</p>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="cases-item">
+          <h3 class="cases-item__title">total deaths cases</h3>
+          <p>{{ deaths | number }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
